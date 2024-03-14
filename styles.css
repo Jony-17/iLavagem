@@ -1,0 +1,317 @@
+/* Formatações gerais*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(236, 235, 235);
+  font-family: monospace, sans-serif;
+}
+
+/* Edição Navbar */
+
+#navbar {
+  height: 100px;
+  background: white;
+  display: flex;
+}
+
+#leftside {
+  width: 33.3%;
+  line-height: 100px;
+}
+
+/* Edição Navbar --> logo */
+
+#logo a {
+  text-decoration: none;
+}
+
+#logo h1 {
+  margin-left: 100px;
+  color: #2a91e6;
+  font-family: alternate-gothic-atf, sans-serif;
+}
+
+.cinza {
+  color: lightgrey;
+}
+
+/* Edição Navbar --> Links */
+
+#mid {
+  text-align: center;
+  width: 33.3%;
+  line-height: 100px;
+}
+
+#mid li {
+  display: inline;
+}
+
+#mid li a {
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+#mid li a:link {
+  color: lightgrey;
+  transition: 0.5s;
+}
+
+#mid li a:visited {
+  color: lightgrey;
+}
+
+#mid li a:hover {
+  color: #2a91e6;
+}
+
+/* Edição Navbar --> Link ativo */
+
+#mid .active:link {
+  color: #2a91e6;
+}
+
+#mid .active:visited {
+  color: #2a91e6;
+}
+
+/* Edição Navbar --> Butões */
+
+#rightside {
+  width: 33.3%;
+  text-align: right;
+  line-height: 100px;
+  margin: 0 auto;
+}
+
+#butaoregisto {
+  margin-right: 100px;
+  width: 80px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  transition: 0.25s;
+  cursor: pointer;
+  font-family: monospace, sans-serif;
+  font-size: 17px;
+  color: lightgrey;
+  padding: 0 5px;
+}
+
+#butaoregisto:hover {
+  background-color: rgb(223, 222, 222);
+  color: white;
+}
+
+#butaologin {
+  margin-right: 25px;
+  width: 75px;
+  height: 30px;
+  color: white;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #2a91e6;
+  transition: 0.25s;
+  font-family: monospace, sans-serif;
+  font-size: 17px;
+  padding-bottom: 2px;
+}
+
+#butaologin:hover {
+  background-color: #2681cc;
+}
+
+/* Formatacao conteudo página */
+
+#conteudo {
+  width: 1080px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
+}
+
+/* Formatacao Apresentação */
+
+#apresentacao {
+  position: relative;
+  text-align: center;
+}
+
+#apresentacao img {
+  height: 500px;
+  width: 100%;
+  opacity: 0.3;
+  object-fit: cover;
+}
+
+#texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #2a91e6;
+}
+
+#texto hr {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid #2a91e6;
+  background-color: #2a91e6;
+}
+
+#texto h2,
+a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #2a91e6;
+}
+#texto h2::selection,
+h1::selection {
+  background-color: white;
+}
+
+/* Formatacao area 2 */
+
+#area2 {
+  margin-top: 50px;
+}
+
+#area2 h2 {
+  color: #2a91e6;
+  text-align: center;
+}
+
+#area2 h2::selection{
+  background-color: lightgrey;
+  color: white;
+}
+
+#area2 span::selection{
+  color: #2a91e6;
+  background-color: lightgrey;
+}
+
+#razoes {
+  display: flex;
+  margin-top: 50px;
+  gap: 25px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#razao1,
+#razao2,
+#razao3 {
+  flex-basis: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+#razao1 {
+  margin-left: 25px;
+}
+#razao3 {
+  margin-right: 25px;
+}
+
+.fa-truck,
+.fa-hourglass-start,
+.fa-home {
+  font-size: 50px;
+  color: lightgrey;
+}
+
+#razao1 hr,
+#razao2 hr,
+#razao3 hr {
+  width: 50%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: lightgrey;
+  border: 0.5px solid lightgrey;
+}
+
+#razao1 p,
+#razao2 p,
+#razao3 p {
+  color: rgb(148, 148, 148);
+}
+
+#razao1 p::selection,
+#razao2 p::selection,
+#razao3 p::selection {
+  background-color: lightgrey;
+}
+
+/* Formatação footer */
+#footer{
+  background-color: lightgrey;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+  color: rgb(56, 56, 56);
+  margin-top: 50px;
+}
+
+#morada{
+  transition: 0.5s;
+}
+
+#morada:hover{
+  color: #2a91e6;
+  cursor: pointer;
+}
+
+#email{
+  margin-top: 15px;  
+  transition: 0.5s;
+} 
+
+#email span{
+  font-style: italic;
+}
+
+#email:hover{
+  cursor: pointer;
+  color: #2a91e6;
+}
+
+#areacliente{
+  margin-top: 15px;
+  transition: 0.5s;
+}
+
+#areacliente a{
+  text-decoration: none;
+  color: rgb(56, 56, 56);
+  transition: 0.5s;
+}
+
+#areacliente a:hover{
+  color: #2a91e6;
+}
+
+#areacliente:hover{
+  color: #2a91e6;
+}
+
+#horario{
+  margin-top: 15px;
+  transition: 0.5s;
+}
+
+#horario:hover{
+  color: #2a91e6;
+}
+
+.para{
+  display: block;
+  margin-top: 5px;
+}

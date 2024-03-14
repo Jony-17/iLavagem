@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>iLavagem</title>
+    <link rel="stylesheet" type="text/css" href="contacto.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c95afec481.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/logo2_png.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="leftside">
+            <div id="logo">
+                <a href="../">
+                    <h1><span class="cinza">i</span>Lavagem</h1>
+                </a>
+            </div>
+        </div>
+        <div id="mid">
+            <ul>
+                <li>
+                    <a href="../">Home</a>
+                </li>
+                <li>
+                    <a href="../servicos/">Serviços</a>
+                </li>
+                <li>
+                    <a href="./" class="active">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div id="rightside">
+            <button id="butaologin" onclick="window.location.href = '../areacliente/login/'">
+                Login
+            </button>
+            <button id="butaoregisto" onclick="window.location.href = '../areacliente/registo/'">Registo</button>
+        </div>
+    </div>
+
+
+    <div id="conteudo">
+        <div id="contacto">
+            <div id="contactoesquerda"></div>
+            <div id="contactodireita">
+                <h3>Entre em contacto connosco! Tentaremos responder o mais rápido possível!</h3>
+                <form action="functions.php" method="POST">
+                    <label for="nome">Nome*</label>
+                    <input type="text" name="nome" placeHolder="Insira o seu nome" id="nome">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" name="assunto" placeHolder="Insira o assunto" id="assunto">
+                    <label for="email">E-mail*</label>
+                    <input type="email" name="email" placeHolder="Insira o seu e-mail" id="emaili">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" rows="6" placeHolder="Insira a sua mensagem" id="msg"></textarea>
+                    <button type="submit" id="enviar">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="footer">
+        <div id="morada">
+            <i class="fas fa-map-pin"></i>
+            <span>Rua 14 de Outubro, 27</span>
+        </div>
+        <div id="email">
+            <i class="fas fa-envelope"></i>
+            <span>geral@ilavagem.pt</span>
+        </div>
+        <div id="areacliente">
+            <i class="fas fa-user"></i>
+            <a href="../areacliente/login/">Área do cliente</a>
+        </div>
+        <div id="horario">
+            <i class="fas fa-clock"></i>
+            <span>Seg a Qui - 10h às 20h</span>
+            <span class="para">Sex - 10h às 22h</span>
+            <span class="para">Sábados e Domingos - 8h às 22h</span>
+        </div>
+    </div>
+
+</body>
+
+</html>

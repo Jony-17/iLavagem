@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>iLavagem</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="shortcut icon" href="assets/logo2_png.png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c95afec481.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="leftside">
+        <div id="logo">
+          <a href="./">
+            <h1><span class="cinza">i</span>Lavagem</h1>
+          </a>
+        </div>
+      </div>
+      <div id="mid">
+        <ul>
+          <li>
+            <a href="./" class="active">Home</a>
+          </li>
+          <li>
+            <a href="/ilavagem/servicos/">Serviços</a>
+          </li>
+          <li>
+            <a href="/ilavagem/contacto/">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div id="rightside">
+        <button id="butaologin" onclick="window.location.href = '/ilavagem/areacliente/login/'">
+          Login
+        </button>
+        <button id="butaoregisto" onclick="window.location.href = '/ilavagem/areacliente/registo/'">Registo</button>
+      </div>
+    </div>
+    <div id="conteudo">
+      <div id="apresentacao">
+        <img src="./assets/imagem1.jpg" />
+        <div id="texto">
+          <h1>A sua lavandaria à distância de um clique!</h1>
+          <hr />
+          <a href="/ilavagem/servicos/"><h2>Descubra mais!</h2></a>
+        </div>
+      </div>
+
+      <div id="area2">
+        <h2>Porquê a <span class="cinza">i</span>Lavagem?</h2>
+        <div id="razoes">
+          <div id="razao1">
+            <i class="fas fa-truck fa-flip-horizontal"></i>
+            <hr />
+            <p>
+              Indique o ponto de recolha. Vamos até à localização indicada
+              recolher o seu pedido!
+            </p>
+          </div>
+          <div id="razao2">
+            <i class="fas fa-hourglass-start"></i>
+            <hr />
+            <p>Aguarde enquanto tratamos do seu pedido!</p>
+          </div>
+          <div id="razao3">
+            <i class="fas fa-home"></i>
+            <hr />
+            <p>
+              Entregamos o seu pedido de acordo com o endereço de entrega
+              indicado!
+            </p>
+          </div>
+        </div>
+        </div>
+        <div id="footer">
+          <div id="morada">
+            <i class="fas fa-map-pin"></i>
+            <span>Rua 14 de Outubro, 27</span>
+          </div>
+          <div id="email">
+            <i class="fas fa-envelope"></i>
+            <span>geral@ilavagem.pt</span>
+          </div>
+          <div id="areacliente">
+            <i class="fas fa-user"></i>
+            <a href="/ilavagem/areacliente/login/">Área do cliente</a>
+          </div>
+
+          <div id="horario">
+            <i class="fas fa-clock"></i>
+            <span>Seg a Qui - 10h às 20h</span>
+            <span class="para">Sex - 10h às 22h</span>
+            <span class="para">Sábados e Domingos - 8h às 22h</span>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

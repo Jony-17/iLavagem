@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(236, 235, 235);
+  font-family: monospace, sans-serif;
+}
+
+#navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+#leftside {
+  line-height: 100px;
+  flex-basis: 33%;
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+#logo h1 {
+  margin-left: 100px;
+  color: #2a91e6;
+  font-family: alternate-gothic-atf, sans-serif;
+}
+
+.cinza {
+  color: lightgrey;
+}
+/* Edição Navbar --> Links */
+#mid {
+  text-align: center;
+  flex-basis: 33%;
+  line-height: 100px;
+}
+
+#mid li {
+  display: inline;
+}
+
+#mid li a {
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+#mid li a:link {
+  color: lightgrey;
+  transition: 0.5s;
+}
+
+#mid li a:visited {
+  color: lightgrey;
+}
+
+#mid li a:hover {
+  color: #2a91e6;
+}
+
+/* Edição Navbar --> Link ativo */
+
+#mid .active:link {
+  color: #2a91e6;
+}
+
+#mid .active:visited {
+  color: #2a91e6;
+}
+
+/* Edição Navbar --> Parte perfil */
+#rightside {
+  text-align: center;
+  flex-basis: 33%;
+  line-height: 100px;
+}
+
+#rightside li {
+  display: inline;
+}
+
+#rightside li a {
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 50px;
+  line-height: 100px;
+}
+
+#rightside li a:link {
+  color: lightgrey;
+  transition: 0.5s;
+}
+
+#rightside li a:visited {
+  color: lightgrey;
+}
+
+#rightside li a:hover {
+  color: #2a91e6;
+}
+
+/* Edição conteúdo da página */
+#conteudo {
+  width: 1080px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
+  height: 50vh;
+}
+
+/* SEM PEDIDO */
+#sem-pedido{
+  width: 100%;
+  height: 100%;
+  padding-top: 13%;
+  text-align: center;
+}
+
+#um{
+  color: lightgrey;
+}
+
+#dois{
+  margin-top: 15px;
+}
+
+#dois a{
+  text-decoration: none;
+}
+
+#dois a:link{
+  color: lightgrey;
+  transition: 0.5s;
+}
+
+#dois a:visited{
+  color: lightgrey;
+}
+
+#dois a:hover{
+  color: #2a91e6;
+}
+
+/* COM PEDIDOS */
+#tabela-tracking{
+  padding-top: 13%;
+}
+
+#servicos{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+#servicos th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #2a91e6;
+  color: white;
+}
+
+
+#servicos td{
+  text-align: center;
+}
+
+#servicos th, #servicos td{
+  border: 1px solid white;
+  padding: 8px;
+}
+
+#servicos tr:nth-child(even){background-color: #f2f2f2;}
+
+#servicos tr:hover {background-color: #ddd;}

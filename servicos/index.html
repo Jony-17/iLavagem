@@ -1,0 +1,122 @@
+<?php 
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>iLavagem</title>
+    <link rel="stylesheet" type="text/css" href="servicos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../assets/logo2_png.png">
+    <script
+      src="https://kit.fontawesome.com/c95afec481.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="leftside">
+        <div id="logo">
+          <a href="../">
+            <h1><span class="cinza">i</span>Lavagem</h1>
+          </a>
+        </div>
+      </div>
+      <div id="mid">
+        <ul>
+          <li>
+            <a href="../">Home</a>
+          </li>
+          <li>
+            <a href="./" class="active">Serviços</a>
+          </li>
+          <li>
+            <a href="../contacto/">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div id="rightside">
+        <button id="butaologin" onclick="window.location.href = '../areacliente/login/'">
+          Login
+        </button>
+        <button id="butaoregisto" onclick="window.location.href = '../areacliente/registo/'">Registo</button>
+      </div>
+    </div>
+
+    <div id="conteudo">
+      <h1 style="text-align: center; margin-bottom: 25px; padding-top: 25px; color: #2a91e6;">Os Nossos serviços!</h1>
+      <div id="servicos">
+        <div class="servico">
+          <img src="../assets/lavagem.png" />
+          <hr />
+          <h2>Lavagem e Secagem</h2>
+          <p id="p1">De 5 a 9kg ..... 6,00€</p>
+          <p>De 9 a 14kg ..... 8,00€</p>
+          <p>De 14 a 19kg ..... 9,90€</p>
+        </div>
+        <div class="servico">
+          <img src="../assets/engomaria.png" />
+          <hr />
+          <h2>Engomaria</h2>
+          <p id="p1">1 peça ..... 1,00€</p>
+          <p>15 peças ..... 13,50€</p>
+          <p>20 peças ..... 17,00€</p>
+          <p>30 peças ..... 24,00€</p>
+          <p>50 ou mais peças ..... 35,00€</p>
+        </div>
+        <div class="servico">
+          <img src="../assets/seco.png" />
+          <hr />
+          <h2>Lavagem a seco</h2>
+          <p id="p1">Kispo ..... 8,20€</p>
+          <p>Casaco com penas ..... 8,50€</p>
+          <p>Casaco de malha ..... 3,70€</p>
+          <p>Fato ..... 7,50€</p>
+          <p>Vestido de noiva ..... 50,00€</p>
+          <p>Vestido de cerimónia ..... 17,00€</p>
+          <p>Camisola ..... 3,50€</p>
+          <p>Camisa ..... 3,70€</p>
+          <p>Calças ..... 3,80€</p>
+        </div>
+        <div class="servico">
+          <img src="../assets/costurar.png" />
+          <hr />
+          <h2>Costura</h2>
+          <p>Preço sob consulta</p>
+        </div>
+        <div class="servico">
+          <i class="fas fa-fill-drip"></i>
+          <hr />
+          <h2>Tinturaria</h2>
+          <p>Preço por unidade ..... 12,00€</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div id="morada">
+        <i class="fas fa-map-pin"></i>
+        <span>Rua 14 de Outubro, 27</span>
+      </div>
+      <div id="email">
+        <i class="fas fa-envelope"></i>
+        <span>geral@ilavagem.pt</span>
+      </div>
+      <div id="areacliente">
+        <i class="fas fa-user"></i>
+        <a href="../areacliente/login/">Área do cliente</a>
+      </div>
+      <div id="horario">
+        <i class="fas fa-clock"></i>
+        <span>Seg a Qui - 10h às 20h</span>
+        <span class="para">Sex - 10h às 22h</span>
+        <span class="para">Sábados e Domingos - 8h às 22h</span>
+      </div>
+    </div>
+  </body>
+</html>
